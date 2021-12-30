@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Pemberitahuan" pageWidth="595" pageHeight="420" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b7abb26b-e899-4527-b37a-8109e6ca4e74">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="dGJfcGFuZ2dpbGFuICwxNSwxNSwzODgwYmZiZS1jNTY5LTQ0MTMtODE0Ni1jNzQ0NTAyODAxOTc7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="db_sidang"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="paramId" class="java.lang.String"/>
+	<parameter name="paramLevel" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM tb_panggilan
+WHERE 
+	 tb_panggilan.id = $P{paramId}]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_perkara" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="no_perkara"/>
+		<property name="com.jaspersoft.studio.field.label" value="no_perkara"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="jenis"/>
+		<property name="com.jaspersoft.studio.field.label" value="jenis"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama_pp"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama_pp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_js" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama_js"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama_js"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="alamat"/>
+		<property name="com.jaspersoft.studio.field.label" value="alamat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_putus" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tgl_putus"/>
+		<property name="com.jaspersoft.studio.field.label" value="tgl_putus"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_sidang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tgl_sidang"/>
+		<property name="com.jaspersoft.studio.field.label" value="tgl_sidang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pgl_pbt" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pgl_pbt"/>
+		<property name="com.jaspersoft.studio.field.label" value="pgl_pbt"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kecamatan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kecamatan"/>
+		<property name="com.jaspersoft.studio.field.label" value="kecamatan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelurahan" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kelurahan"/>
+		<property name="com.jaspersoft.studio.field.label" value="kelurahan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="biaya" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="biaya"/>
+		<property name="com.jaspersoft.studio.field.label" value="biaya"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hakim" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hakim"/>
+		<property name="com.jaspersoft.studio.field.label" value="hakim"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_panggilan"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Variable_1" class="java.lang.String">
+		<variableExpression><![CDATA["Nomor Perkara " +$F{no_perkara}]]></variableExpression>
+	</variable>
+	<variable name="Variable_2" class="java.lang.String">
+		<variableExpression><![CDATA["Kecamatan " + $F{kecamatan}]]></variableExpression>
+	</variable>
+	<variable name="Variable_3" class="java.lang.String">
+		<variableExpression><![CDATA[$F{hakim}]]></variableExpression>
+	</variable>
+	<variable name="Variable_4" class="java.lang.String">
+		<variableExpression><![CDATA[($P{paramLevel} == 3) ? "Kasir" : $F{nama_js}]]></variableExpression>
+	</variable>
+	<variable name="Variable_5" class="java.lang.String">
+		<variableExpression><![CDATA["Kediri, " + new SimpleDateFormat("dd - MM - yyyy").format(new Date())]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="8" width="570" height="30" uuid="7f6892de-e032-4e4a-ada7-b680e24ba49d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSTRUMEN PANGGILAN TUNDA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-10" y="38" width="570" height="22" uuid="a764d634-00dc-48ae-a924-0c3b7f142d9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Perkara Nomor " + $F{no_perkara}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="165">
+			<staticText>
+				<reportElement x="5" y="25" width="160" height="20" uuid="66e3c6cd-e527-402b-b483-64a78f3f7981"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Pemberitahuan Permohonan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="5" y="45" width="280" height="20" uuid="65d8bbdb-a0e3-44ff-a0e2-744214186892"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Variable_2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="65" width="20" height="20" uuid="6d6b1ba1-b019-47a0-9052-960656f642b6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="85" width="20" height="20" uuid="b0222bab-f118-48de-9423-2699b77497c7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="105" width="20" height="20" uuid="b331a4ff-477f-4e6d-b3e2-317f1111aa19"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="125" width="20" height="20" uuid="1ac40d9e-bf4b-4e73-9a7c-92d39ad021e3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="65" width="164" height="20" uuid="897b99f7-b993-4aa0-9d21-117a24030116"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Sidang Selanjutnya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="85" width="164" height="20" uuid="02048df8-c222-40c4-9887-a6f3df2bf275"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama PP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="105" width="164" height="20" uuid="9bce6cb4-ee70-4b1a-9d65-c9b690f4cb37"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama JS/JSP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="125" width="164" height="20" uuid="14e1a419-fec0-4827-8699-cf52101595be"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Biaya PGL/PBT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="65" width="10" height="20" uuid="e9f73ac2-ebbe-489a-b9f3-81ec2770889f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="85" width="10" height="20" uuid="681e8632-3eb4-4bd3-a569-2ff1754db85d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="105" width="10" height="20" uuid="07263bd0-be7d-4b66-81a8-a6627439c70e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="125" width="10" height="20" uuid="4b604822-7bae-4651-b5b5-9a81f882af16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="199" y="85" width="214" height="20" uuid="b64fb7af-d0ec-4dad-a8a6-ab54559d9ac3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="199" y="65" width="214" height="20" uuid="0ada9f26-9bd7-47db-8758-5c1f1e2a5f5d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_sidang}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="199" y="125" width="214" height="20" uuid="c7c16094-088c-4b69-b822-e375086379b4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{biaya} == null) ? "" : $F{biaya}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="199" y="105" width="214" height="20" uuid="1d0cf3e8-8e50-4aef-8cc7-fddd5b406166"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_js}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="353" y="40" width="128" height="20" uuid="509d52e4-d607-420c-af63-3fa703d7c2db"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ketua Majelis,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="352" y="110" width="208" height="30" uuid="3100de3f-586e-4b41-9f10-13728a77b829"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Variable_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="60" width="198" height="20" uuid="8c67d094-7d7b-480d-aa4b-b0cf92914644"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{Variable_5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
